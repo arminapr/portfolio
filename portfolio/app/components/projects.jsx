@@ -1,15 +1,14 @@
 'use client';
 
 import React, { useState } from 'react';
-import { Box, Container, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Stack, Chip } from '@mui/material';
-import Button from '@material-ui/core/Button';
+import { Box, Container, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Stack, Chip, Button } from '@mui/material';
 import Image from 'next/image';
 import '../styles/Projects.css';
 
 const projectsData = [
     {
         title: "Market Reader",
-        description: "A sentiment analysis tool designed to evaluate the sentiment of real-time financial news. The project integrates the BERT model to classify text into neutral, negative, or positive categories and features a web scraping component that extracts headlines from Yahoo Finance, and analyzes their sentiment. This model achieved around 85% accuracy.",
+        description: "A sentiment analysis tool designed to evaluate the sentiment of real-time financial news. The project integrates the BERT model to classify text into neutral, negative, or positive categories and features a web scraping component that extracts headlines from Yahoo Finance and analyzes their sentiment. This model achieved around 85% accuracy.",
         image: "/images/market.jpg",
         alt: "Picture of financial trends on a computer.",
         links: [
@@ -21,7 +20,7 @@ const projectsData = [
     },
     {
         title: "Reversi",
-        description: "A hexagonal Reversi game that has the ability to play against a human or a computer. This project includes multiple algorithms for the computer opponent to make the most rewarding move. The game features an intuitive user interface, robust game logic, and an AI opponent with various strategic levels.",
+        description: "A hexagonal Reversi game with the ability to play against a human or a computer. This project includes multiple algorithms for the computer opponent to make the most rewarding move. The game features an intuitive user interface, robust game logic, and an AI opponent with various strategic levels.",
         image: "/images/reversi.gif",
         alt: "Walkthrough of Reversi Game",
         additionalInfo: "* Click on the GIF to expand the player view.\n** This demo shows a human (black) against a computer agent (white).\n*** Code is available upon request.",
@@ -66,17 +65,14 @@ const projectsData = [
 const languageColors = {
     Python: "#3776AB",
     Java: "#E440D5",
-    "AI/ML": "#FFC107",
-    React: "#61DAFB",
-    SQL: "#FFCA28",
-    Docker: "#007396",
-    Swift: "#2496ED"
+    "AI/ML": "#FFC107"
 };
 
 const Projects = () => {
     const [showAll, setShowAll] = useState(false);
     const [openModal, setOpenModal] = useState(false);
     const [selectedProject, setSelectedProject] = useState(null);
+    const [selectedLanguages, setSelectedLanguages] = useState([]);
 
     const handleOpenModal = (project) => {
         setSelectedProject(project);
@@ -88,7 +84,19 @@ const Projects = () => {
         setSelectedProject(null);
     };
 
-    const displayedProjects = showAll ? projectsData : projectsData.slice(0, 3);
+    const toggleLanguageSelection = (language) => {
+        setSelectedLanguages((prevSelected) =>
+            prevSelected.includes(language)
+                ? prevSelected.filter((lang) => lang !== language)
+                : [...prevSelected, language]
+        );
+    };
+
+    const filteredProjects = projectsData.filter((project) =>
+        selectedLanguages.length === 0 || project.languages.some((language) => selectedLanguages.includes(language))
+    );
+
+    const displayedProjects = showAll ? filteredProjects : filteredProjects.slice(0, 3);
 
     return (
         <Box id="projects" className="projects-root">
@@ -96,6 +104,22 @@ const Projects = () => {
                 <Typography variant="h2" color="primary" gutterBottom>
                     Projects
                 </Typography>
+                <Stack direction="row" spacing={1} className="language-chips">
+                    {Object.keys(languageColors).map((language, index) => (
+                        <Chip
+                            key={index}
+                            label={language}
+                            onClick={() => toggleLanguageSelection(language)}
+                            variant={selectedLanguages.includes(language) ? "filled" : "outlined"}
+                            style={{
+                                backgroundColor: selectedLanguages.includes(language)
+                                    ? languageColors[language]
+                                    : "#E0E0E0",
+                                color: selectedLanguages.includes(language) ? "#fff" : "#000",
+                            }}
+                        />
+                    ))}
+                </Stack>
                 <Box className="spotlights">
                     {displayedProjects.map((project, index) => (
                         <Box key={index} className="spotlight" onClick={() => handleOpenModal(project)}>
@@ -103,6 +127,7 @@ const Projects = () => {
                                 src={project.image}
                                 alt={project.alt}
                                 className="project-image"
+                                layout="fixed"
                                 width={300}
                                 height={200}
                             />
@@ -137,7 +162,6 @@ const Projects = () => {
                 </Box>
                 <Button
                     variant="outlined"
-                    id="view-more-button"
                     className="view-more-button"
                     onClick={() => setShowAll(!showAll)}
                 >
@@ -151,6 +175,8 @@ const Projects = () => {
                                 src={selectedProject.image}
                                 alt={selectedProject.alt}
                                 className="project-image"
+                                layout="responsive"
+                                objectFit="contain"
                                 width={300}
                                 height={200}
                             />
