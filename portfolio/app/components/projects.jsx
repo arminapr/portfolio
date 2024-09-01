@@ -101,7 +101,7 @@ const Projects = () => {
     return (
         <Box id="projects" className="projects-root">
             <Container>
-                <Typography variant="h2" color="primary" gutterBottom>
+                <Typography variant="h3" color="primary" gutterBottom>
                     Projects
                 </Typography>
                 <Stack direction="row" spacing={1} className="language-chips">

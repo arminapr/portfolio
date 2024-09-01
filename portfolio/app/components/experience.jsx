@@ -12,6 +12,12 @@ import '../styles/Experience.css';
 const Experiences = () => {
     const experiences = [
         {
+            title: "AI Researcher",
+            company: "Cashew Capital",
+            dates: "Jul 2024 - present",
+            icon: <CodeIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
             title: "Software Engineering Fellow",
             company: "Headstarter AI",
             dates: "Jul 2024 - present",
@@ -19,7 +25,7 @@ const Experiences = () => {
         },
         {
             title: "Researcher",
-            company: "University of Connecticut & Northeastern University",
+            company: "UConn & Northeastern University",
             dates: "May 2023 - present",
             icon: <SchoolIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
@@ -36,32 +42,21 @@ const Experiences = () => {
             icon: <ExploreIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
-            title: "Teaching Assistant For Discrete Structures",
+            title: "Teaching Assistant",
             company: "Northeastern University",
-            dates: "Aug 2023 - Dec 2023",
+            dates: "Aug 2023 - present",
             icon: <TeachingIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-        },
-        {
-            title: "Tutor",
-            company: "Zinkerz",
-            dates: "Jul 2021 - Aug 2023",
-            icon: <TutoringIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-        },
+        }
     ];
 
     return (
         <Box id="experiences" className="experiences-root" py={4}>
             <Container className="experience-container">
-                <Typography variant="h4" color="primary" gutterBottom>
+                <Typography variant="h3" color="primary" gutterBottom>
                     Experience
                 </Typography>
                 <Typography variant="body1" color="textSecondary" paragraph>
-                    In roles as a Full Stack Engineering Co-op, Researcher, Teaching
-                    Assistant, User Experience Developer, Tutor, and Resident Engagement
-                    Specialist, I've honed skills in programming, UI/UX design, data
-                    analysis, and problem-solving. With an interest in the integration of
-                    AI and Finance, I am dedicated to making a real impact using advanced
-                    technical solutions.
+                    I have gained valuable experience in various roles, including Full Stack Engineering Co-op, Researcher, Teaching Assistant, and more. My skills in programming, UI/UX design, and data analysis continue to grow as I explore the integration of AI and finance.
                 </Typography>
                 <Box display="flex" flexWrap="wrap" justifyContent="space-between" mt={4}>
                     {experiences.map((experience, index) => (
