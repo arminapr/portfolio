@@ -1,0 +1,48 @@
+.wrapper.style3.fade-up {
+    background-color: #f0f0f0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.traveling {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.travel-photo {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+}
+
+.travel-photo img {
+    height: 200px;
+    border-radius: 10px;
+    display: block;
+}
+
+.travel-photo::after {
+    content: attr(data-location);
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.travel-photo:hover {
+    transform: scale(1.05);
+}
+
+.travel-photo:hover::after {
+    opacity: 1;
+}

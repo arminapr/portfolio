@@ -1,0 +1,45 @@
+.contact-root {
+    padding: 50px 0;
+    background-color: #ffffff;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.contact-info {
+    flex: 1;
+    min-width: 300px;
+}
+
+.contact-info a {
+    display: block;
+    margin-bottom: 10px;
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+.contact-info .contact-socials {
+    list-style-type: none;
+    padding: 0;
+}
+
+.contact-info .contact-socials li {
+    margin-bottom: 10px;
+}
+
+.contact-info .contact-socials .icon {
+    font-size: 24px;
+    margin-right: 10px;
+}
+
+.contact-form {
+    flex: 1;
+    min-width: 300px;
+}
+
+.submit-button {
+    margin-top: 20px;
+}
