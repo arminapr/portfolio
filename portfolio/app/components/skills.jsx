@@ -44,17 +44,17 @@ const skillsData = [
   {
     title: "Programming Languages",
     icon: <CodeIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-    description: "Java, JavaScript, TypeScript, Racket, HTML, CSS, Python, SQL, Swift",
+    description: "Java, JavaScript, TypeScript, Racket, HTML, CSS, Python, SQL, Swift, Kotlin, C++",
   },
   {
     title: "Frameworks and Libraries",
     icon: <LaptopMacIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-    description: "Angular, React, Node.js, Next.js, NumPy, Pandas, PyTorch, TensorFlow, Flask",
+    description: "Angular, React, Node.js, Next.js, Express.js, NumPy, Pandas, PyTorch, TensorFlow, Flask",
   },
   {
     title: "Tools and Technologies",
     icon: <StorageIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-    description: "Git, Docker, MySQL, Confluence, JIRA, Excel, VSCode, IntelliJ IDEA, Eclipse, Figma",
+    description: "Linux/Unix, Git, Docker, MySQL, REST APIs, Confluence, JIRA, Excel, VSCode, IntelliJ IDEA, Eclipse, Jupyter Notebook, Figma",
   }
 ];
 

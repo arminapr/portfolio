@@ -50,7 +50,7 @@ const Experiences = () => {
     ];
 
     return (
-        <Box id="experiences" className="experiences-root" py={4}>
+        <Box id="experience" className="experiences-root" py={4}>
             <Container className="experience-container">
                 <Typography variant="h3" color="primary" gutterBottom>
                     Experience
