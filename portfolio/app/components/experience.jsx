@@ -55,9 +55,6 @@ const Experiences = () => {
                 <Typography variant="h3" color="primary" gutterBottom>
                     Experience
                 </Typography>
-                <Typography variant="body1" color="textSecondary" paragraph>
-                    I have gained valuable experience in various roles, including Full Stack Engineering Co-op, Researcher, Teaching Assistant, and more. My skills in programming, UI/UX design, and data analysis continue to grow as I explore the integration of AI and finance.
-                </Typography>
                 <Box display="flex" flexWrap="wrap" justifyContent="space-between" mt={4}>
                     {experiences.map((experience, index) => (
                         <Box key={index} flexBasis="100%" mb={4} px={1}
