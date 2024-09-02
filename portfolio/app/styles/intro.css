@@ -60,6 +60,7 @@
 .resume-button,
 .linkedin-button {
     margin-right: 15px;
+    height: 20px;
     text-transform: none;
     font-family: 'Poppins', sans-serif;
 }

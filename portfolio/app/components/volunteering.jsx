@@ -2,10 +2,10 @@ import React from 'react';
 import '../styles/Volunteering.css';
 import { Box, Container, Typography } from '@mui/material';
 import LaptopIcon from '@mui/icons-material/Laptop';
-import VolunteeringActivismIcon from '@mui/icons-material/VolunteerActivism';
-import MicrophoneIcon from '@mui/icons-material/Mic';
+import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
+import MicIcon from '@mui/icons-material/Mic';
 import CastForEducationIcon from '@mui/icons-material/CastForEducation';
-import FirstAidIcon from '@mui/icons-material/MedicalServices';
+import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const volunteeringData = [
     {
@@ -21,13 +21,13 @@ const volunteeringData = [
         duration: "Sep 2023 - Dec 2023"
     },
     {
-        icon: <VolunteeringActivismIcon />,
+        icon: <VolunteerActivismIcon />,
         title: "CitySites Volunteer",
         organization: "Little Brothers Friends of the Elderly",
         duration: "Oct 2023 - Apr 2024"
     },
     {
-        icon: <MicrophoneIcon />,
+        icon: <MicIcon />,
         title: "National Ambassador",
         organization: "Herren Project",
         duration: "Jun 2020 - Aug 2023"
@@ -39,7 +39,7 @@ const volunteeringData = [
         duration: "Sep 2021 - Jun 2022"
     },
     {
-        icon: <FirstAidIcon />,
+        icon: <MedicalServicesIcon />,
         title: "Volunteer",
         organization: "Rhode Island Blood Center",
         duration: "Nov 2021 - Mar 2022"
@@ -50,10 +50,10 @@ const Volunteering = () => {
     return (
         <Box id="volunteering" className="volunteering-root">
             <Container>
-                <Typography variant="h2" color="primary" gutterBottom>
+                <Typography variant="h3" color="primary" gutterBottom>
                     Volunteering
                 </Typography>
-                <Typography variant="body1" color="textSecondary" paragraph>
+                <Typography variant="body1" color="textSecondary" paragraph className="volunteer-desc">
                     Beyond academia and work, I am committed to making a positive impact on my community through
                     volunteer opportunities and advocacy.
                 </Typography>
@@ -63,10 +63,10 @@ const Volunteering = () => {
                             <Box className="volunteering-icon">
                                 {item.icon}
                             </Box>
-                            <Typography className="volunteering-title" variant="h5" color="textPrimary">
+                            <Typography className="volunteering-title" variant="h6" color="textPrimary">
                                 {item.title}
                             </Typography>
-                            <Typography variant="body1" color="textSecondary">
+                            <Typography variant="body2" color="textSecondary">
                                 {item.organization}<br />
                                 {item.duration}
                             </Typography>

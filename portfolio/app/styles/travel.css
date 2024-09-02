@@ -1,4 +1,4 @@
-.wrapper.style3.fade-up {
+.traveling-section {
     background-color: #f0f0f0;
     padding: 60px 20px;
     text-align: center;
@@ -20,7 +20,7 @@
 }
 
 .travel-photo img {
-    height: 200px;
+    width: auto;
     border-radius: 10px;
     display: block;
 }

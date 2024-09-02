@@ -65,6 +65,7 @@ const Intro = () => {
                                 href="https://drive.google.com/file/d/1cQLeYjqVZ9AoyfM8CNvhIbRsUenym6Qe/view?usp=sharing"
                                 variant="contained"
                                 className="resume-button"
+                                sx={{ height: 40 }}
                             >
                                 Resume
                             </Button>
@@ -72,6 +73,10 @@ const Intro = () => {
                                 href="https://www.linkedin.com/in/arminapr"
                                 variant="outlined"
                                 className="linkedin-button"
+                                sx={{
+                                    height: 40,
+                                    backgroundColor: 'transparent', 
+                                }}
                             >
                                 LinkedIn
                             </Button>

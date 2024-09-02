@@ -3,7 +3,6 @@ import { Container, Box, Typography } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import StorageIcon from '@mui/icons-material/Storage';
-import BuildIcon from '@mui/icons-material/Build';
 import '../styles/Skills.css';
 
 const skillsLogos = [
@@ -63,7 +62,7 @@ const Skills = () => {
   return (
     <Box id="skills" className="skills-root" py={4}>
       <Container className="skills-container">
-        <Typography variant="h4" color="primary" gutterBottom>
+        <Typography variant="h3" color="primary" gutterBottom>
           Skills
         </Typography>
         <div className="skills-slider">

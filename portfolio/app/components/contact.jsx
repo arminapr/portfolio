@@ -1,7 +1,9 @@
 'use client';
 
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/Contact.css';
+import EmailIcon from '@mui/icons-material/Email';
+import Phone from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -16,21 +18,19 @@ const Contact = () => {
                 </Typography>
                 <Box className="contact-content">
                     <Box className="contact-info">
-                        <Typography variant="h4">Personal Email</Typography>
-                        <a href="mailto:arminaparva@gmail.com">arminaparva@gmail.com</a>
-                        <Typography variant="h4">School Email</Typography>
-                        <a href="mailto:parvareshrizi.a@northeastern.edu">parvareshrizi.a@northeastern.edu</a>
-                        <Typography variant="h4">Phone</Typography>
-                        <span>(401) 365-2437</span>
-                        <Typography variant="h4">Social</Typography>
+                        <Typography variant="h4" gutterBottom className="contact-header primary-font">Contact Information</Typography>
+                        <a href="mailto:arminaparva@gmail.com" className="contact-link primary-font"><EmailIcon />arminaparva@gmail.com</a>
+                        <a href="mailto:parvareshrizi.a@northeastern.edu" className="contact-link primary-font"><EmailIcon />parvareshrizi.a@northeastern.edu</a>
+                        <span className="contact-phone"><Phone />+1 (401) 365-2437</span>
+                        <Typography variant="h4" gutterBottom className="contact-header primary-font">Socials</Typography>
                         <ul className="contact-socials">
-                            <li><a href="https://www.github.com/arminapr" className="icon"><GitHubIcon /> GitHub</a></li>
-                            <li><a href="https://www.linkedin.com/arminapr" className="icon"><LinkedInIcon /> LinkedIn</a></li>
-                            <li><a href="https://www.instagram.com/travelsbyarmina" className="icon"><InstagramIcon /> Instagram</a></li>
+                            <li><a href="https://www.github.com/arminapr" className="icon primary-font"><GitHubIcon /> GitHub</a></li>
+                            <li><a href="https://www.linkedin.com/arminapr" className="icon primary-font"><LinkedInIcon /> LinkedIn</a></li>
+                            <li><a href="https://www.instagram.com/travelsbyarmina" className="icon primary-font"><InstagramIcon /> Instagram</a></li>
                         </ul>
                     </Box>
                     <Box className="contact-form">
-                        <Typography variant="h4" gutterBottom>Send me a message</Typography>
+                        <Typography variant="h4" gutterBottom className="contact-header">Send me a message :)</Typography>
                         <form action="https://formsubmit.co/01f7a0c0d9593794efce1bbbeb2b2625" method="POST">
                             <div className="form-group">
                                 <div className="form-row">
@@ -45,7 +45,7 @@ const Contact = () => {
                             <div className="form-group">
                                 <textarea placeholder="Your Message" className="form-control" name="message" rows="10" required />
                             </div>
-                            <button type="submit" className="btn btn-lg btn-dark btn-block">Submit Form</button>
+                            <button type="submit" className="submit-button">Submit Form</button>
                         </form>
                     </Box>
                 </Box>

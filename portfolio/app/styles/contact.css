@@ -1,38 +1,75 @@
 .contact-root {
-    padding: 50px 0;
-    background-color: #ffffff;
+    padding: 60px 0;
+    background-color: #f9f9f9;
+}
+
+.contact-header {
+    color: rgb(88, 88, 160);
 }
 
 .contact-content {
     display: flex;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 40px;
+    justify-content: space-between;
 }
 
 .contact-info {
     flex: 1;
     min-width: 300px;
+    padding-right: 20px;
 }
 
-.contact-info a {
-    display: block;
-    margin-bottom: 10px;
-    color: #3f51b5;
+.contact-info h4 {
+    margin-bottom: 20px;
+}
+
+.contact-info h5 {
+    margin: 10px 0 5px;
+}
+
+.contact-link,
+.contact-socials .icon {
     text-decoration: none;
 }
 
-.contact-info .contact-socials {
+.contact-link:hover,
+.contact-socials .icon:hover {
+    text-decoration: none; 
+    color: #303f9f;
+}
+
+.contact-link, .contact-phone {
+    margin-bottom: 15px;
+    color: #3f51b5;
+    text-decoration: none !important;
+    border-bottom: 0px;
+}
+
+.contact-link, .contact-phone, .icon {
+    display: flex;
+    gap: 10px;
+}
+
+.contact-socials {
     list-style-type: none;
     padding: 0;
 }
 
-.contact-info .contact-socials li {
-    margin-bottom: 10px;
+.contact-socials li {
+    margin-bottom: 15px;
 }
 
-.contact-info .contact-socials .icon {
-    font-size: 24px;
-    margin-right: 10px;
+.contact-socials .icon {
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    color: #3f51b5;
+    text-decoration: none;
+}
+
+.contact-socials .icon:hover {
+    text-decoration: underline;
 }
 
 .contact-form {
@@ -40,6 +77,41 @@
     min-width: 300px;
 }
 
+.contact-form .form-group {
+    margin-bottom: 20px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form .form-control {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 5px;
+    font-family: 'Poppins', serif;
+}
+
 .submit-button {
-    margin-top: 20px;
+    display: inline-block;
+    background-color: #3f51b5;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #303f9f;
+}
+
+.primary-font {
+    font-family: 'Poppins', sans-serif;
 }
