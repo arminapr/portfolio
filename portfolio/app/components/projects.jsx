@@ -7,6 +7,17 @@ import '../styles/Projects.css';
 
 const projectsData = [
     {
+        title: "Personal Website",
+        description: "This website is built utilizing Next.js, React, JavaScript, HTML, and CSS",
+        image: "/images/portfolio.png",
+        alt: "Picture of my website head.",
+        links: [
+            { href: "https://github.com/arminapr/portfolio", text: "View the code on GitHub" },
+            { href: "https://www.arminapr.com", text: "View my personal website (although you're already on it!)" },
+        ],
+        languages: ["JavaScript", "React", "HTML/CSS"]
+    },
+    {
         title: "Market Reader",
         description: "A sentiment analysis tool designed to evaluate the sentiment of real-time financial news. The project integrates the BERT model to classify text into neutral, negative, or positive categories and features a web scraping component that extracts headlines from Yahoo Finance and analyzes their sentiment. This model achieved around 85% accuracy.",
         image: "/images/market.jpg",
@@ -26,6 +37,18 @@ const projectsData = [
         additionalInfo: "* Click on the GIF to expand the player view.\n** This demo shows a human (black) against a computer agent (white).\n*** Code is available upon request.",
         languages: ["Java"],
         collaborators: "Ft. Katya Luchette"
+    },
+    {
+        title: "PollPal",
+        description: "The goal of this application is to help users stay informed on current election information and make informed decisions for managing campaigns. This application relies on three users who take on the roles of campaign manager, voter, and data analyst.",
+        image: "/images/pollpal.jpg",
+        alt: "Picture of PollPal's Logo.",
+        links: [
+            { href: "https://github.com/arminapr/pollpal", text: "View the code on GitHub" }
+        ],
+        languages: ["Python", "SQL"],
+        additionalInfo: "* Note that this application only uses mock data.",
+        collaborators: "Ft. Celia Burrington, Niki Anand, Nalika Palayoor, and Sriya Vuppala"
     },
     {
         title: "Klondike",
@@ -57,7 +80,7 @@ const projectsData = [
         image: "/images/accelcoin.jpg",
         alt: "Picture of the Boston skyline, with a rainbow at sunset.",
         additionalInfo: "* Code is available upon request.",
-        languages: ["Java"],
+        languages: ["Racket"],
         collaborators: "Ft. Ryan Zhu"
     }
 ];
@@ -65,7 +88,12 @@ const projectsData = [
 const languageColors = {
     Python: "#3776AB",
     Java: "#E440D5",
-    "AI/ML": "#FFC107"
+    "AI/ML": "#FFC107",
+    SQL: "#2ada4b",
+    Racket: "#e1431e",
+    JavaScript: "#1e20e1",
+    React: "#1ee1d7", 
+    "HTML/CSS": "#1ee1a9"
 };
 
 const Projects = () => {
@@ -174,7 +202,7 @@ const Projects = () => {
                             <Image
                                 src={selectedProject.image}
                                 alt={selectedProject.alt}
-                                className="project-image"
+                                className="dialog-image"
                                 layout="responsive"
                                 objectFit="contain"
                                 width={300}

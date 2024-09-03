@@ -17,10 +17,10 @@
     background-color: #fff;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center items horizontally */
+    align-items: center; 
     height: 225px; 
-    text-align: center; /* Center text */
-    overflow: hidden; /* Ensure overflow is hidden */
+    text-align: center; 
+    overflow: hidden; 
 }
 
 .skill-card:hover {

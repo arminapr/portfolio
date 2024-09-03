@@ -62,11 +62,15 @@
 .resume-button,
 .linkedin-button {
     margin-right: 15px;
-    height: 40px; /* Adjust height */
+    height: 40px;
     text-transform: none;
     font-family: 'Poppins', sans-serif;
-    font-size: 1rem; /* Adjust font size */
-    padding: 10px 20px; /* Adjust padding */
+    font-size: 1rem;
+    padding: 10px 20px;
+
+    ::hover {
+        color: white;
+    }
 }
 
 .highlight {

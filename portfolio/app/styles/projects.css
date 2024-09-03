@@ -25,6 +25,19 @@
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
 
+.project-dialog {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.dialog-image {
+    object-fit: cover;
+    height: 300px !important;
+    width: auto;
+    transition: transform 0.3s ease;
+}
+
 .project-image {
     object-fit: cover;
     height: 200px;
