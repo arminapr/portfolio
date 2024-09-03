@@ -92,7 +92,7 @@ const languageColors = {
     SQL: "#2ada4b",
     Racket: "#e1431e",
     JavaScript: "#1e20e1",
-    React: "#1ee1d7", 
+    React: "#1ee1d7",
     "HTML/CSS": "#1ee1a9"
 };
 
@@ -132,9 +132,10 @@ const Projects = () => {
                 <Typography variant="h3" color="primary" gutterBottom>
                     Projects
                 </Typography>
-                <Stack direction="row" spacing={1} className="language-chips">
+                <Stack direction="row" spacing={1} className="language-chips" sx={{ flexWrap: 'wrap' }}>
                     {Object.keys(languageColors).map((language, index) => (
                         <Chip
+                            className='chips'
                             key={index}
                             label={language}
                             onClick={() => toggleLanguageSelection(language)}

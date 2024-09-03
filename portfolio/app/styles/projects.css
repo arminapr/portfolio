@@ -109,8 +109,12 @@ a:hover {
 
 .language-chips {
     justify-content: center;
-    margin-top: 10px;
     margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.chips {
+    margin-bottom: 5px !important;
 }
 
 .collaborators {
@@ -119,12 +123,12 @@ a:hover {
 
 @media (max-width: 768px) {
     .spotlight {
-        flex: 0 0 calc(50% - 20px); /* Two cards per row on smaller screens */
+        flex: 0 0 calc(50% - 20px);
     }
 }
 
 @media (max-width: 480px) {
     .spotlight {
-        flex: 0 0 calc(100% - 20px); /* One card per row on very small screens */
+        flex: 0 0 calc(100% - 20px);
     }
 }
