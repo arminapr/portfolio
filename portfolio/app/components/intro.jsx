@@ -31,7 +31,7 @@ const Intro = () => {
                 <Box className="intro-container slide-in-right" alignItems="center" flexWrap="wrap">
                     <Box flex={2} minWidth="300px">
                         <Typography variant="h2" className="name">
-                            Hi, there! I'm <br /><span className="highlight">Armina Parvaresh Rizi</span>
+                            Hi, there! I&rsquo;m <br /><span className="highlight">Armina Parvaresh Rizi</span>
                         </Typography>
                         <TypeAnimation
                             sequence={[
@@ -58,7 +58,7 @@ const Intro = () => {
                         <Typography variant="body1" className="subtitle" paragraph>
                             BSCS, Computer Science, Artificial Intelligence
                             <br />
-                            Northeastern University '26
+                            Northeastern University &rsquo;26
                         </Typography>
                         <Box mt={2}>
                             <Button
