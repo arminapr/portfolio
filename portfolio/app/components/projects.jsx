@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Box, Container, Typography, Dialog, DialogTitle, DialogContent, DialogActions, Stack, Chip, Button } from '@mui/material';
 import Image from 'next/image';
-import '../styles/Projects.css';
+import '../styles/projects.css';
 
 const projectsData = [
     {

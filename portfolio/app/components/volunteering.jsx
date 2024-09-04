@@ -1,5 +1,5 @@
 import React from 'react';
-import '../styles/Volunteering.css';
+import '../styles/volunteering.css';
 import { Box, Container, Typography } from '@mui/material';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';

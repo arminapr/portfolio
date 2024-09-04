@@ -3,7 +3,7 @@ import { Container, Box, Typography } from '@mui/material';
 import CodeIcon from '@mui/icons-material/Code';
 import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import StorageIcon from '@mui/icons-material/Storage';
-import '../styles/Skills.css';
+import '../styles/skills.css';
 
 const skillsLogos = [
   { name: "Java", image: "/skills-icons/java.png" },

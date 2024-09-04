@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import { Container, Box, Typography, Button } from '@mui/material';
 import Image from 'next/image';
-import '../styles/Intro.css';
+import '../styles/intro.css';
 import { TypeAnimation } from 'react-type-animation';
 
 const Intro = () => {

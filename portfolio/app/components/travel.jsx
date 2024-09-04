@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import '../styles/Travel.css';
+import '../styles/travel.css';
 import { Box, Container, Typography } from '@mui/material';
 
 const travelPhotos = [

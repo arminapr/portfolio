@@ -7,7 +7,7 @@ import TeachingIcon from '@mui/icons-material/EmojiObjects';
 import TutoringIcon from '@mui/icons-material/People';
 import ExploreIcon from '@mui/icons-material/Explore';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import '../styles/Experience.css';
+import '../styles/experience.css';
 
 const Experiences = () => {
     const experiences = [

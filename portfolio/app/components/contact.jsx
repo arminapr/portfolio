@@ -1,7 +1,7 @@
 'use client';
 
 import React from 'react';
-import '../styles/Contact.css';
+import '../styles/contact.css';
 import EmailIcon from '@mui/icons-material/Email';
 import Phone from '@mui/icons-material/Phone';
 import GitHubIcon from '@mui/icons-material/GitHub';
