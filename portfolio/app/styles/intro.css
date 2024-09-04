@@ -59,18 +59,19 @@
     margin-top: 20px;
 }
 
-.resume-button,
-.linkedin-button {
-    margin-right: 15px;
-    height: 40px;
+.linkedin-button, .resume-button {
+    background-color: #0077b5;
+    color: #fff;
+    padding: 8px 16px;
     text-transform: none;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1rem;
-    padding: 10px 20px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-right: 15px;
+}
 
-    ::hover {
-        color: white;
-    }
+.linkedin-button:hover, .resume-button:hover {
+    background-color: #005582;
+    color: white !important;
 }
 
 .highlight {
@@ -85,22 +86,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 20px;
-}
-
-.slide-in-right {
-    animation: slide-in 1s ease-out;
-}
-
-@keyframes slide-in {
-    0% {
-        transform: translateX(100%);
-        opacity: 0;
-    }
-
-    100% {
-        transform: translateX(0);
-        opacity: 1;
-    }
 }
 
 @media (max-width: 768px) {
@@ -124,12 +109,5 @@
     .intro-container {
         flex-direction: column;
         text-align: center;
-    }
-
-    .resume-button,
-    .linkedin-button {
-        margin: 10px;
-        font-size: 0.9rem;
-        padding: 10px 20px;
     }
 }

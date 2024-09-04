@@ -25,8 +25,8 @@ const Navbar = () => {
           <ListItem button component="a" href="#volunteering" className="navbar-item">
             <ListItemText primary="Volunteering" className="navbar-item-text" />
           </ListItem>
-          <ListItem button component="a" href="#traveling" className="navbar-item">
-            <ListItemText primary="Traveling" className="navbar-item-text" />
+          <ListItem button component="a" href="#travel" className="navbar-item">
+            <ListItemText primary="Travel" className="navbar-item-text" />
           </ListItem>
           <ListItem button component="a" href="#contact" className="navbar-item">
             <ListItemText primary="Contact" className="navbar-item-text" />

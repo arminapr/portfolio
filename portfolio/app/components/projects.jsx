@@ -15,7 +15,7 @@ const projectsData = [
             { href: "https://github.com/arminapr/portfolio", text: "View the code on GitHub" },
             { href: "https://www.arminapr.com", text: "View my personal website (although you're already on it!)" },
         ],
-        languages: ["JavaScript", "React", "HTML/CSS"]
+        languages: ["JavaScript", "React", "HTML/CSS"],
     },
     {
         title: "Market Reader",
@@ -59,6 +59,20 @@ const projectsData = [
         languages: ["Java"]
     },
     {
+        title: "MobyPhish",
+        description: "The MobyPhish extension is a project created by a researchers at UCONN and Trinity College, with the purpose of helping you stay safe from phishing attacks. Previous versions of this extension used JavaScript and were built for the FireFox browser.",
+        image: "/images/mobyphish.webp",
+        alt: "Picture of MobyPhish Logo",
+        links: [
+            { href: "https://mobyphish.com/", text: "Learn more about the project here." },
+            { href: "https://github.com/akhargha/pki-chrome", text: "View the GitHub repository here." },
+            { href: "https://github.com/arminapr/pki-extension", text: "View the code for the old version of this extension here." },
+        ],
+        additionalInfo: "* Funded by the National Science Foundation. Award #2149765.",
+        languages: ["TypeScript", "React", "HTML/CSS"],
+        collaborators: "Ft. UConn + Trinity College Researchers"
+    },
+    {
         title: "Maze Solver",
         description: "A random maze game developed using Kruskal's Algorithm. The code adjusts to the user's preferred size and includes options to solve the maze using BFS or DFS. Additionally, users can solve the maze themselves and choose to turn on or off the visited paths.",
         image: "/images/maze.gif",
@@ -92,6 +106,7 @@ const languageColors = {
     SQL: "#2ada4b",
     Racket: "#e1431e",
     JavaScript: "#1e20e1",
+    "TypeScript": "#4fa0bc",
     React: "#1ee1d7",
     "HTML/CSS": "#1ee1a9"
 };
@@ -189,13 +204,15 @@ const Projects = () => {
                         </Box>
                     ))}
                 </Box>
-                <Button
-                    variant="outlined"
-                    className="view-more-button"
-                    onClick={() => setShowAll(!showAll)}
-                >
-                    {showAll ? "View Less" : "View More"}
-                </Button>
+                {filteredProjects.length > 3 && (
+                    <Button
+                        variant="outlined"
+                        className="view-more-button"
+                        onClick={() => setShowAll(!showAll)}
+                    >
+                        {showAll ? "View Less" : "View More"}
+                    </Button>
+                )}
                 {selectedProject && (
                     <Dialog open={openModal} onClose={handleCloseModal} maxWidth="md" fullWidth>
                         <DialogTitle>{selectedProject.title}</DialogTitle>

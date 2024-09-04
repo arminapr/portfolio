@@ -28,7 +28,7 @@ const Intro = () => {
     return (
         <Box id="intro" className="intro-root">
             <Container>
-                <Box className="intro-container slide-in-right" alignItems="center" flexWrap="wrap">
+                <Box className="intro-container slide-in" alignItems="center" flexWrap="wrap">
                     <Box flex={2} minWidth="300px">
                         <Typography variant="h2" className="name">
                             Hi, there! I&rsquo;m <br /><span className="highlight">Armina Parvaresh Rizi</span>
@@ -62,7 +62,8 @@ const Intro = () => {
                         </Typography>
                         <Box mt={2}>
                             <Button
-                                href="https://drive.google.com/file/d/1cQLeYjqVZ9AoyfM8CNvhIbRsUenym6Qe/view?usp=sharing"
+                                href="https://drive.google.com/file/d/1cpBXoVDor1etJgULzwonxy6UIAAtG5Gk/view?usp=sharing"
+                                target='_blank'
                                 variant="contained"
                                 className="resume-button"
                                 sx={{ height: 40 }}
@@ -71,6 +72,7 @@ const Intro = () => {
                             </Button>
                             <Button
                                 href="https://www.linkedin.com/in/arminapr"
+                                target='_blank'
                                 variant="outlined"
                                 className="linkedin-button"
                                 sx={{

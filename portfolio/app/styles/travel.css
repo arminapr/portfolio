@@ -1,10 +1,10 @@
-.traveling-section {
+.travel-section {
     background-color: #f0f0f0;
     padding: 60px 20px;
     text-align: center;
 }
 
-.traveling {
+.travel {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;

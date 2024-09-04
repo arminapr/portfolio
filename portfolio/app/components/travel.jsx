@@ -16,14 +16,14 @@ const travelPhotos = [
     { location: "Niagara Falls, ON", imgSrc: "/images/niagara.jpg", width: 300, height: 200}
 ];
 
-const Traveling = () => {
+const Travel = () => {
     return (
-        <section id="traveling" className="traveling-section">
+        <section id="travel" className="travel-section">
             <div className="inner">
                 <Typography variant="h3" color="primary" gutterBottom>
-                    Traveling
+                    Travel
                 </Typography>
-                <div className="traveling">
+                <div className="travel">
                     {travelPhotos.map((photo, index) => (
                         <div key={index} className="travel-photo" data-location={photo.location}>
                             <Image
@@ -40,4 +40,4 @@ const Traveling = () => {
     );
 };
 
-export default Traveling;
+export default Travel;

@@ -31,7 +31,7 @@ const Contact = () => {
                     </Box>
                     <Box className="contact-form">
                         <Typography variant="h4" gutterBottom className="contact-header">Send me a message :)</Typography>
-                        <form action="https://formsubmit.co/01f7a0c0d9593794efce1bbbeb2b2625" method="POST">
+                        <form action="https://formsubmit.co/01f7a0c0d9593794efce1bbbeb2b2625" method="POST" target='_blank'>
                             <div className="form-group">
                                 <div className="form-row">
                                     <div className="col">
