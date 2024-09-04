@@ -1,0 +1,75 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(10px); 
+    -webkit-backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+    background-color: rgba(41, 46, 70, 0.5); 
+    transition: background-color 0.3s ease;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 0;
+}
+
+.navbar-list {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    list-style: none; 
+}
+
+.navbar-item {
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+}
+
+.navbar-item:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #3498db; 
+}
+
+.navbar-item.active {
+}
+
+.slide-in {
+    animation: slide-in 1s ease-out; 
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-item {
+        padding: 15px 20px;
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1); 
+    }
+    .navbar-item:hover {
+        background-color: rgba(255, 255, 255, 0.2); /* Enhanced hover effect on mobile */
+    }
+}

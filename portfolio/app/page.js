@@ -1,5 +1,6 @@
 import styles from "./page.module.css";
 import Head from 'next/head';
+import Navbar from "./components/navbar";
 import Intro from './/components/intro';
 import Skills from './/components/skills';
 import Projects from './/components/projects';
@@ -10,14 +11,17 @@ import Contact from './/components/contact';
 
 export default function Home() {
   return (
-    <main className={styles.main}>
-      <div><Intro /></div>
-      <div><Projects /></div>
-      <div><Experiences /></div>
-      <div><Skills /></div>
-      <div><Volunteering /></div>
-      <div><Travel /></div>
-      <div><Contact /></div>
-    </main>
+    <>
+      <Navbar />
+      <main className={styles.main}>
+        <section id="intro"><Intro /></section>
+        <section id="projects"><Projects /></section>
+        <section id="experiences"><Experiences /></section>
+        <section id="skills"><Skills /></section>
+        <section id="volunteering"><Volunteering /></section>
+        <section id="travel"><Travel /></section>
+        <section id="contact"><Contact /></section>
+      </main>
+    </>
   );
 }
