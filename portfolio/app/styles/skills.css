@@ -1,6 +1,6 @@
 .skills-root {
     background-color: #f9f9f9;
-    padding: 4rem 0;
+    padding: 50px 0 !important;
 }
 
 .skills-container {
@@ -39,7 +39,7 @@
     display: flex;
     animation: scroll 40s linear infinite;
     align-items: center;
-    width: calc(3.85 * 100%);
+    width: calc(2.45 * 100%);
 }
 
 .skill-slide {

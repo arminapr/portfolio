@@ -61,7 +61,7 @@ const Experiences = () => {
                             flexGrow={1}
                             maxWidth={{ xs: '100%', md: '32%' }}>
                             <Card className="experience-card">
-                                <CardContent>
+                                <CardContent className='experience-card-content'>
                                     <Box display="flex" alignItems="center" mb={2}>
                                         {experience.icon}
                                         <Box ml={2}>

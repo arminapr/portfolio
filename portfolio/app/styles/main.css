@@ -3,7 +3,7 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    font-family: "Outfit", Arial, sans-serif;
+    font-family: "Poppins", sans-serif !important;
 }
 
 .app-container {
@@ -19,5 +19,5 @@
 }
 
 .main {
-    padding-top: 80px;
+    padding-top: 80px !important;
 }

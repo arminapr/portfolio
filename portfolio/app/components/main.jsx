@@ -7,6 +7,7 @@ import Volunteering from './volunteering';
 import Travel from './travel';
 import Contact from './contact';
 import '../styles/main.css';
+import '../styles/globals.css'; 
 
 const MainContent = () => {
   return (
