@@ -1,13 +1,13 @@
 import styles from "./page.module.css";
 import Head from 'next/head';
 import Navbar from "./components/navbar";
-import Intro from './/components/intro';
-import Skills from './/components/skills';
-import Projects from './/components/projects';
-import Experiences from './/components/experience';
-import Volunteering from './/components/volunteering';
-import Travel from './/components/travel';
-import Contact from './/components/contact';
+import Intro from './components/intro';
+import Skills from './components/skills';
+import Projects from './components/projects';
+import Experiences from './components/experience';
+import Volunteering from './components/volunteering';
+import Travel from './components/travel';
+import Contact from './components/contact';
 
 export default function Home() {
   return (
