@@ -74,7 +74,7 @@
 
 .contact-form {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
 }
 
 .contact-form .form-group {
@@ -95,6 +95,10 @@
     color: black;
     border-radius: 5px;
     font-family: 'Poppins', serif !important;
+}
+
+.fixed-height {
+    height: 170px;
 }
 
 .submit-button {
