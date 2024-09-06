@@ -232,7 +232,12 @@ const Projects = () => {
                                 </Typography>
                                 {selectedProject.additionalInfo && (
                                     <Typography variant="body2" color="textSecondary" paragraph>
-                                        {selectedProject.additionalInfo}
+                                        {selectedProject.additionalInfo.split('\n').map((line, index) => (
+                                            <React.Fragment key={index}>
+                                                {line}
+                                                <br />
+                                            </React.Fragment>
+                                        ))}
                                     </Typography>
                                 )}
                                 {selectedProject.links?.map((link, linkIndex) => (

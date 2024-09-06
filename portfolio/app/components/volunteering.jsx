@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/volunteering.css';
 import { Box, Container, Typography } from '@mui/material';
-import LaptopIcon from '@mui/icons-material/Laptop';
+import LaptopMacIcon from '@mui/icons-material/LaptopMac';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import MicIcon from '@mui/icons-material/Mic';
 import CastForEducationIcon from '@mui/icons-material/CastForEducation';
@@ -9,37 +9,37 @@ import MedicalServicesIcon from '@mui/icons-material/MedicalServices';
 
 const volunteeringData = [
     {
-        icon: <LaptopIcon />,
+        icon: <LaptopMacIcon fontSize="large" />,
         title: "Website Development Volunteer",
         organization: "Prometheus",
         duration: "Aug 2023 - Feb 2024"
     },
     {
-        icon: <LaptopIcon />,
+        icon: <LaptopMacIcon fontSize='large'/>,
         title: "User Experience Developer",
         organization: "re:Bloom",
         duration: "Sep 2023 - Dec 2023"
     },
     {
-        icon: <VolunteerActivismIcon />,
+        icon: <VolunteerActivismIcon fontSize='large'/>,
         title: "CitySites Volunteer",
         organization: "Little Brothers Friends of the Elderly",
         duration: "Oct 2023 - Apr 2024"
     },
     {
-        icon: <MicIcon />,
+        icon: <MicIcon fontSize='large'/>,
         title: "National Ambassador",
         organization: "Herren Project",
         duration: "Jun 2020 - Aug 2023"
     },
     {
-        icon: <CastForEducationIcon />,
+        icon: <CastForEducationIcon fontSize='large'/>,
         title: "Classroom Assistant",
         organization: "Lincoln Central Elementary School",
         duration: "Sep 2021 - Jun 2022"
     },
     {
-        icon: <MedicalServicesIcon />,
+        icon: <MedicalServicesIcon fontSize='large'/>,
         title: "Volunteer",
         organization: "Rhode Island Blood Center",
         duration: "Nov 2021 - Mar 2022"
