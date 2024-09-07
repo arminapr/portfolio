@@ -7,24 +7,6 @@ import '../styles/intro.css';
 import { TypeAnimation } from 'react-type-animation';
 
 const Intro = () => {
-    const [text, setText] = useState('');
-    const typingText = 'Engineering The Future';
-    const typingSpeed = 150;
-
-    useEffect(() => {
-        let typingTimeout;
-        const typeText = (index) => {
-            if (index < typingText.length) {
-                setText(typingText.substring(0, index + 1));
-                typingTimeout = setTimeout(() => typeText(index + 1), typingSpeed);
-            }
-        };
-
-        typeText(0);
-
-        return () => clearTimeout(typingTimeout);
-    }, []);
-
     return (
         <Box id="intro" className="intro-root">
             <Container>
@@ -33,7 +15,7 @@ const Intro = () => {
                         <Typography variant="h2" className="name">
                             Hi, there! I&rsquo;m <br /><span className="highlight">Armina Parvaresh Rizi</span>
                         </Typography>
-                        <TypeAnimation
+                        <TypeAnimation className='typing-title'
                             sequence={[
                                 'Engineering The Future',
                                 2000,
