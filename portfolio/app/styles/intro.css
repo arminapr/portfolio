@@ -42,7 +42,6 @@
 
 .typing-title {
     color: white;
-    font-size: 1.75em;
 }
 
 .personal-photo {
@@ -114,5 +113,9 @@
 @media (max-width: 480px) {
     .personal-photo {
         width: 90% !important;
+    }
+
+    .typing-title {
+        font-size: 1.75em !important;
     }
 }
