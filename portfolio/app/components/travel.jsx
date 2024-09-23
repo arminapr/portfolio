@@ -9,7 +9,7 @@ const travelPhotos = [
     { location: "Estes Park, CO", imgSrc: "/images/colorado.jpg", width: 300, height: 200 },
     { location: "Key West, FL", imgSrc: "/images/keywest.jpg", width: 300, height: 200 },
     { location: "Milan, Italy", imgSrc: "/images/milan.jpg", width: 300, height: 200 },
-    { location: "Lison, Portugal", imgSrc: "/images/lisbon.jpg", width: 300, height: 200},
+    { location: "Lisbon, Portugal", imgSrc: "/images/lisbon.jpg", width: 300, height: 200},
     { location: "Mammoth Cave, KY", imgSrc: "/images/kentucky.jpg", width: 300, height: 200},
     { location: "New York City, NY", imgSrc: "/images/nyc.jpg", width: 300, height: 200},
     { location: "Yarmouth, NS", imgSrc: "/images/nova-scotia.jpg", width: 300, height: 200},
