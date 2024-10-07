@@ -12,19 +12,13 @@ import '../styles/experience.css';
 const Experiences = () => {
     const experiences = [
         {
-            title: "AI Researcher",
+            title: "AI Developer",
             company: "Cashew Capital",
             dates: "Jul 2024 - present",
             icon: <CodeIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
-            title: "Software Engineering Fellow",
-            company: "Headstarter AI",
-            dates: "Jul 2024 - present",
-            icon: <CodeIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-        },
-        {
-            title: "Researcher",
+            title: "REU Researcher",
             company: "UConn & Northeastern University",
             dates: "May 2023 - present",
             icon: <SchoolIcon style={{ fontSize: 40, color: '#1976d2' }} />,
@@ -34,6 +28,12 @@ const Experiences = () => {
             company: "XPO",
             dates: "Jan 2024 - Jun 2024",
             icon: <WorkIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
+            title: "Research Assistant",
+            company: "Northeastern University",
+            dates: "Sep 2024 - present",
+            icon: <SchoolIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
             title: "Explorer",
@@ -46,14 +46,14 @@ const Experiences = () => {
             company: "Northeastern University",
             dates: "Aug 2023 - present",
             icon: <TeachingIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-        }
+        },
     ];
 
     return (
         <Box id="experience" className="experiences-root" py={4}>
             <Container className="experience-container">
                 <Typography variant="h3" color="primary" gutterBottom>
-                    Experience
+                    Experiences
                 </Typography>
                 <Box display="flex" flexWrap="wrap" justifyContent="space-between" mt={4}>
                     {experiences.map((experience, index) => (
