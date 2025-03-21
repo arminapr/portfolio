@@ -13,7 +13,11 @@ const travelPhotos = [
     { location: "Mammoth Cave, KY", imgSrc: "/images/kentucky.jpg", width: 300, height: 200},
     { location: "New York City, NY", imgSrc: "/images/nyc.jpg", width: 300, height: 200},
     { location: "Yarmouth, NS", imgSrc: "/images/nova-scotia.jpg", width: 300, height: 200},
-    { location: "Niagara Falls, ON", imgSrc: "/images/niagara.jpg", width: 300, height: 200}
+    { location: "Niagara Falls, ON", imgSrc: "/images/niagara.jpg", width: 300, height: 200},
+    { location: "Big Bend, TX", imgSrc: "/images/bigbend.jpg", width: 300, height: 200},
+    { location: "Howth, Ireland", imgSrc: "/images/dublin.jpg", width: 300, height: 200},
+    { location: "Isla Morada, FL", imgSrc: "/images/islamorada.jpg", width: 300, height: 200},
+    { location: "Malmo, Sweden", imgSrc: "/images/sweden.jpg", width: 300, height: 200},
 ];
 
 const Travel = () => {

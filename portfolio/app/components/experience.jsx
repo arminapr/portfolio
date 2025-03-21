@@ -4,7 +4,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import SchoolIcon from '@mui/icons-material/School';
 import CodeIcon from '@mui/icons-material/Code';
 import TeachingIcon from '@mui/icons-material/EmojiObjects';
-import TutoringIcon from '@mui/icons-material/People';
+import RocketIcon from '@mui/icons-material/Rocket';
 import ExploreIcon from '@mui/icons-material/Explore';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import '../styles/experience.css';
@@ -12,22 +12,22 @@ import '../styles/experience.css';
 const Experiences = () => {
     const experiences = [
         {
-            title: "AI Developer",
-            company: "Cashew Capital",
-            dates: "Jul 2024 - present",
-            icon: <CodeIcon style={{ fontSize: 40, color: '#1976d2' }} />,
-        },
-        {
-            title: "REU Researcher",
-            company: "UConn & Northeastern University",
-            dates: "May 2023 - present",
-            icon: <SchoolIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+            title: "Software Engineering Intern",
+            company: "SpaceX",
+            dates: "Jan 2025 - present",
+            icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
             title: "Full Stack Engineering Co-op",
             company: "XPO",
             dates: "Jan 2024 - Jun 2024",
             icon: <WorkIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
+            title: "REU Researcher",
+            company: "UConn & Northeastern University",
+            dates: "May 2023 - Dec 2024",
+            icon: <SchoolIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
             title: "Research Assistant",
@@ -44,7 +44,7 @@ const Experiences = () => {
         {
             title: "Teaching Assistant",
             company: "Northeastern University",
-            dates: "Aug 2023 - present",
+            dates: "Aug 2023 - Dec 2024",
             icon: <TeachingIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
     ];
