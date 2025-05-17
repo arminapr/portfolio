@@ -12,9 +12,15 @@ import '../styles/experience.css';
 const Experiences = () => {
     const experiences = [
         {
+            title: "Aladdin Wealth Tech Summer Analyst",
+            company: "BlackRock",
+            dates: "Jun 2025 - Aug 2025",
+            icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
             title: "Software Engineering Intern",
             company: "SpaceX",
-            dates: "Jan 2025 - present",
+            dates: "Jan 2025 - May 2025",
             icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
@@ -22,6 +28,12 @@ const Experiences = () => {
             company: "XPO",
             dates: "Jan 2024 - Jun 2024",
             icon: <WorkIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
+            title: "AI Developer",
+            company: "Cashew Capital",
+            dates: "Aug 2024 - Dec 2024",
+            icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
             title: "REU Researcher",
@@ -46,6 +58,12 @@ const Experiences = () => {
             company: "Northeastern University",
             dates: "Aug 2023 - Dec 2024",
             icon: <TeachingIcon style={{ fontSize: 40, color: '#1976d2' }} />,
+        },
+        {
+            title: "Tutor",
+            company: "Tutor The Future",
+            dates: "Mar 2024 - present",
+            icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
     ];
 
