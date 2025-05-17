@@ -30,6 +30,16 @@ const projectsData = [
         collaborators: "Ft. Ryan Brueckner & Carlos Cueto"
     },
     {
+        title: "Emojinal Detector",
+        description: "Emotional Detector camera, overlaying emojis on the user's face based on their emotional state. The project utilizes OpenCV for image processing and TensorFlow for emotion detection, providing a fun and interactive way to visualize emotions.",
+        image: "/images/emoji.png",
+        alt: "Picture of emojis together.",
+        links: [
+            { href: "https://github.com/arminapr/emotion-detection", text: "View the code on GitHub" },
+        ],
+        languages: ["AI/ML", "Python"],
+    },
+    {
         title: "Reversi",
         description: "A hexagonal Reversi game with the ability to play against a human or a computer. This project includes multiple algorithms for the computer opponent to make the most rewarding move. The game features an intuitive user interface, robust game logic, and an AI opponent with various strategic levels.",
         image: "/images/reversi.gif",
