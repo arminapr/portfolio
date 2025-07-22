@@ -18,6 +18,13 @@ const projectsData = [
         languages: ["JavaScript", "React", "HTML/CSS"],
     },
     {
+        title: "KTP Member App",
+        description: "This app is built to manage our member system for the Kappa Theta Pi fraternity. It allows members to view events, other members in the fraternity, and any related information to the fraternity. The app is built using React Native and Supabase for real-time data synchronization.",
+        image: "/images/ktp.jpg",
+        alt: "Picture of KTP Alpha Class.",
+        languages: ["TypeScript", "React Native", "React"],
+    },
+    {
         title: "Market Reader",
         description: "A sentiment analysis tool designed to evaluate the sentiment of real-time financial news. The project integrates the BERT model to classify text into neutral, negative, or positive categories and features a web scraping component that extracts headlines from Yahoo Finance and analyzes their sentiment. This model achieved around 85% accuracy.",
         image: "/images/market.jpg",
@@ -118,7 +125,8 @@ const languageColors = {
     JavaScript: "#1e20e1",
     "TypeScript": "#4fa0bc",
     React: "#1ee1d7",
-    "HTML/CSS": "#1ee1a9"
+    "HTML/CSS": "#1ee1a9",
+    "React Native": "#61DAFB",
 };
 
 const Projects = () => {
