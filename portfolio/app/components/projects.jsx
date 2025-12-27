@@ -7,6 +7,34 @@ import '../styles/projects.css';
 
 const projectsData = [
     {
+        title: "Deep Learning Facial Emotion Recognition and Visualization",
+        description: "This project uses various machine learning models (custom and pre-trained) to classify facial emotions from images. The models are trained and evaluated on the FER-2013 dataset, comparing model performance. There is a UI, using Grad-CAM and Attention Rollout to show which facial features are helping the model make its prediction.",
+        image: "/images/happy.png",
+        alt: "Picture of emojis together.",
+        links: [
+            { href: "https://github.com/arminapr/cv-facial-expression-detection", text: "View the code on GitHub" },
+        ],
+        languages: ["AI/ML", "Python"],
+        collaborators: "Ft. Ethan Anthony",
+        additionalInfo: "* The report PDF is available upon request."
+    },
+    {
+        title: "KTP Member App",
+        description: "This app is built to manage our member system for the Kappa Theta Pi fraternity. It allows members to view events, other members in the fraternity, and any related information to the fraternity. The app is built using React Native and Supabase for real-time data synchronization.",
+        image: "/images/ktp.jpg",
+        alt: "Picture of KTP Alpha Class.",
+        languages: ["TypeScript", "React Native", "React"],
+    },
+    {
+        title: "Reversi",
+        description: "A hexagonal Reversi game with the ability to play against a human or a computer. This project includes multiple algorithms for the computer opponent to make the most rewarding move. The game features an intuitive user interface, robust game logic, and an AI opponent with various strategic levels.",
+        image: "/images/reversi.gif",
+        alt: "Walkthrough of Reversi Game",
+        additionalInfo: "* Click on the GIF to expand the player view.\n** This demo shows a human (black) against a computer agent (white).\n*** Code is available upon request.",
+        languages: ["Java"],
+        collaborators: "Ft. Katya Luchette"
+    },
+    {
         title: "Personal Website",
         description: "This website is built utilizing Next.js, React, JavaScript, HTML, and CSS",
         image: "/images/portfolio.png",
@@ -16,13 +44,6 @@ const projectsData = [
             { href: "https://www.arminapr.com", text: "View my personal website (although you're already on it!)" },
         ],
         languages: ["JavaScript", "React", "HTML/CSS"],
-    },
-    {
-        title: "KTP Member App",
-        description: "This app is built to manage our member system for the Kappa Theta Pi fraternity. It allows members to view events, other members in the fraternity, and any related information to the fraternity. The app is built using React Native and Supabase for real-time data synchronization.",
-        image: "/images/ktp.jpg",
-        alt: "Picture of KTP Alpha Class.",
-        languages: ["TypeScript", "React Native", "React"],
     },
     {
         title: "Market Reader",
@@ -35,25 +56,6 @@ const projectsData = [
         ],
         languages: ["Python", "AI/ML"],
         collaborators: "Ft. Ryan Brueckner & Carlos Cueto"
-    },
-    {
-        title: "Emojinal Detector",
-        description: "Emotional Detector camera, overlaying emojis on the user's face based on their emotional state. The project utilizes OpenCV for image processing and TensorFlow for emotion detection, providing a fun and interactive way to visualize emotions.",
-        image: "/images/emoji.png",
-        alt: "Picture of emojis together.",
-        links: [
-            { href: "https://github.com/arminapr/emotion-detection", text: "View the code on GitHub" },
-        ],
-        languages: ["AI/ML", "Python"],
-    },
-    {
-        title: "Reversi",
-        description: "A hexagonal Reversi game with the ability to play against a human or a computer. This project includes multiple algorithms for the computer opponent to make the most rewarding move. The game features an intuitive user interface, robust game logic, and an AI opponent with various strategic levels.",
-        image: "/images/reversi.gif",
-        alt: "Walkthrough of Reversi Game",
-        additionalInfo: "* Click on the GIF to expand the player view.\n** This demo shows a human (black) against a computer agent (white).\n*** Code is available upon request.",
-        languages: ["Java"],
-        collaborators: "Ft. Katya Luchette"
     },
     {
         title: "PollPal",
@@ -239,8 +241,7 @@ const Projects = () => {
                                 src={selectedProject.image}
                                 alt={selectedProject.alt}
                                 className="dialog-image"
-                                layout="responsive"
-                                objectFit="contain"
+                                layout="intrinsic"
                                 width={300}
                                 height={200}
                             />

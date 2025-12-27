@@ -56,12 +56,12 @@ const Experiences = () => {
         {
             title: "Teaching Assistant",
             company: "Northeastern University",
-            dates: "Aug 2023 - Dec 2024",
+            dates: "Aug 2023 - Dec 2025",
             icon: <TeachingIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
         {
             title: "Tutor",
-            company: "Tutor The Future",
+            company: "East Coast Scholars",
             dates: "Mar 2024 - present",
             icon: <RocketIcon style={{ fontSize: 40, color: '#1976d2' }} />,
         },
